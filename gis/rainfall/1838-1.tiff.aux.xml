@@ -1,0 +1,71 @@
+<PAMDataset>
+  <Metadata>
+    <MDI key="NC_GLOBAL#comment">seasonal resolution gridded climate observations</MDI>
+    <MDI key="NC_GLOBAL#Conventions">CF-1.5</MDI>
+    <MDI key="NC_GLOBAL#creation_date">2022-03-14T13:40:05</MDI>
+    <MDI key="NC_GLOBAL#frequency">seas</MDI>
+    <MDI key="NC_GLOBAL#institution">Met Office</MDI>
+    <MDI key="NC_GLOBAL#references">doi: 10.1002/joc.1161</MDI>
+    <MDI key="NC_GLOBAL#short_name">seasonal_rainfall</MDI>
+    <MDI key="NC_GLOBAL#source">HadUK-Grid_v1.1.0.0</MDI>
+    <MDI key="NC_GLOBAL#title">Gridded surface climate observations data for the UK</MDI>
+    <MDI key="NC_GLOBAL#version">v20220310</MDI>
+    <MDI key="NETCDF_DIM_EXTRA">{time}</MDI>
+    <MDI key="NETCDF_DIM_time_DEF">{4,6}</MDI>
+    <MDI key="NETCDF_DIM_time_VALUES">{333441,335625,337833,340029}</MDI>
+    <MDI key="projection_x_coordinate#axis">X</MDI>
+    <MDI key="projection_x_coordinate#bounds">projection_x_coordinate_bnds</MDI>
+    <MDI key="projection_x_coordinate#standard_name">projection_x_coordinate</MDI>
+    <MDI key="projection_x_coordinate#units">m</MDI>
+    <MDI key="projection_y_coordinate#axis">Y</MDI>
+    <MDI key="projection_y_coordinate#bounds">projection_y_coordinate_bnds</MDI>
+    <MDI key="projection_y_coordinate#standard_name">projection_y_coordinate</MDI>
+    <MDI key="projection_y_coordinate#units">m</MDI>
+    <MDI key="rainfall#cell_methods">time: sum time: sum</MDI>
+    <MDI key="rainfall#coordinates">clim_season latitude longitude</MDI>
+    <MDI key="rainfall#description">Total rainfall</MDI>
+    <MDI key="rainfall#grid_mapping">transverse_mercator</MDI>
+    <MDI key="rainfall#label_units">mm</MDI>
+    <MDI key="rainfall#long_name">Total precipitation amount</MDI>
+    <MDI key="rainfall#plot_label">Total rainfall (mm)</MDI>
+    <MDI key="rainfall#standard_name">lwe_thickness_of_precipitation_amount</MDI>
+    <MDI key="rainfall#units">mm</MDI>
+    <MDI key="rainfall#_FillValue">1e+20</MDI>
+    <MDI key="time#axis">T</MDI>
+    <MDI key="time#bounds">time_bnds</MDI>
+    <MDI key="time#calendar">gregorian</MDI>
+    <MDI key="time#standard_name">time</MDI>
+    <MDI key="time#units">hours since 1800-01-01 00:00:00</MDI>
+    <MDI key="transverse_mercator#false_easting">400000</MDI>
+    <MDI key="transverse_mercator#false_northing">-100000</MDI>
+    <MDI key="transverse_mercator#grid_mapping_name">transverse_mercator</MDI>
+    <MDI key="transverse_mercator#latitude_of_projection_origin">49</MDI>
+    <MDI key="transverse_mercator#longitude_of_central_meridian">-2</MDI>
+    <MDI key="transverse_mercator#longitude_of_prime_meridian">0</MDI>
+    <MDI key="transverse_mercator#scale_factor_at_central_meridian">0.9996012717</MDI>
+    <MDI key="transverse_mercator#semi_major_axis">6377563.396</MDI>
+    <MDI key="transverse_mercator#semi_minor_axis">6356256.909</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <UnitType>mm</UnitType>
+    <Metadata>
+      <MDI key="cell_methods">time: sum time: sum</MDI>
+      <MDI key="coordinates">clim_season latitude longitude</MDI>
+      <MDI key="description">Total rainfall</MDI>
+      <MDI key="grid_mapping">transverse_mercator</MDI>
+      <MDI key="label_units">mm</MDI>
+      <MDI key="long_name">Total precipitation amount</MDI>
+      <MDI key="NETCDF_DIM_time">333441</MDI>
+      <MDI key="NETCDF_VARNAME">rainfall</MDI>
+      <MDI key="plot_label">Total rainfall (mm)</MDI>
+      <MDI key="standard_name">lwe_thickness_of_precipitation_amount</MDI>
+      <MDI key="STATISTICS_MAXIMUM">585.09549728362</MDI>
+      <MDI key="STATISTICS_MEAN">185.40149514483</MDI>
+      <MDI key="STATISTICS_MINIMUM">0</MDI>
+      <MDI key="STATISTICS_STDDEV">80.454731158664</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">19.98</MDI>
+      <MDI key="units">mm</MDI>
+      <MDI key="_FillValue">1e+20</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>
