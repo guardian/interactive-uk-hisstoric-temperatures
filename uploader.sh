@@ -1,0 +1,1 @@
+aws s3 sync "./gis" s3://gdn-cdn/maptiles/temperatures-uk --acl public-read --cache-control max-age=60 --content-encoding gzip --content-type application/x-protobuf

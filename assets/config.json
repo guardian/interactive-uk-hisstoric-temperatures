@@ -1,0 +1,24 @@
+{
+	"layers": {
+		"temperatures":            { "minzoom":  0, "maxzoom": 6 }
+	},
+	"settings": {
+		"minzoom": 0,
+		"maxzoom": 6,
+		"basezoom": 6,
+		"include_ids": false,
+		"combine_below": 14,
+		"name": "Tilemaker to OpenMapTiles schema",
+		"version": "3.0",
+		"description": "Tile config based on OpenMapTiles schema",
+		"compress": "gzip",
+		"filemetadata": {
+			"tilejson": "2.0.0", 
+			"scheme": "xyz", 
+			"type": "baselayer", 
+			"format": "pbf", 
+            "tiles": ["https://interactive.guim.co.uk/maptiles/temperatures-uk/{z}/{x}/{y}.pbf"]
+		}
+	}
+}
+

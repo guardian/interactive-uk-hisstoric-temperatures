@@ -1,0 +1,52 @@
+{
+    "version": 8,
+    "sources": {
+        "dots": {
+            "type": "vector",
+            "tiles": [
+                "http://localhost:8888/20220804-interactive-uk-historic-temperatures/gis/{z}/{x}/{y}.pbf"
+            ]
+        }
+    },
+    "sprite": "",
+    "layers": [
+        {
+            "id": "background",
+            "type": "background",
+            "paint": {
+                "background-color": "#ffffda"
+            }
+        },
+        {
+            "id": "temperatures-heat",
+            "type": "heatmap",
+            "source": "dots",
+            "source-layer": "temperatures",
+            "paint": {
+                "heatmap-intensity": 1,
+                "heatmap-color": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "heatmap-density"
+                    ],
+                    0,
+                    "rgba(255,255,255,1)",
+                    0.2,
+                    "rgb(103,169,207)",
+                    0.4,
+                    "rgb(209,229,240)",
+                    0.6,
+                    "rgb(253,219,199)",
+                    0.8,
+                    "rgb(239,138,98)",
+                    1,
+                    "rgb(178,24,43)"
+                ],
+                "heatmap-radius": 5
+            }
+        }
+    ]
+}

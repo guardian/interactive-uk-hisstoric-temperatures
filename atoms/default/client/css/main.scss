@@ -3,7 +3,7 @@
 @import "mq";
 @import "palette";
 @import "dcr_enhancer"; // default left column enhancer, works with inline, showcase and immersive weighting
-// @import "full_immersive_enhancer"; // full-width enhancer, to be used with immersive weighting. Removes left colum, sets 100vw atom width at any breakpoint
+//@import "full_immersive_enhancer"; // full-width enhancer, to be used with immersive weighting. Removes left colum, sets 100vw atom width at any breakpoint
 
 /*----- Vertical scrollbar width used for sizing full viewport width elements -----*/
 root {
@@ -11,9 +11,18 @@ root {
     --half-scrollbar-width: 0;
 }
 
+#gv-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
 .interactive-atom {
     margin: 0;
     padding: 0;
+    
 }
 // uncomment to test
 // .gv-wrapper {
